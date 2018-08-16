@@ -1,9 +1,11 @@
 <template>
 
-  <!--循环列表-->
+  <div>
+    <transition>
+      <router-view></router-view>
+    </transition>
 
-
-  <router-view></router-view>
+  </div>
 </template>
 
 <script>
@@ -15,31 +17,10 @@ export default {
     };
   },
   created: function () {
-    this.getList();
-    console.log("启动中");
+
+    console.log("启动渲染");
   },
   methods:{
-    getList(){
-      console.log("获取中");
-
-
-      this.$http.get('/api/lists?page_num=1&page_size=5', {}, {
-        headers: {
-
-        },
-        emulateJSON: true
-      }).then(function (res) {
-        this.list= res.body.data.rows;
-        console.log("成功了")
-        console.log(this.list)
-      }, function (error) {
-        console.log("失败了")
-        console.log(error)
-      })
-
-
-
-    }
 
 
   }

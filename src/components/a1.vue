@@ -20,15 +20,69 @@
       最新资讯
     </div>
   </div>
+  <!--导航栏-->
+  <div class="container-fluid  ">
+    <div class="row" style="padding: 0 auto;text-align: center;margin-bottom: 0.74rem;margin-top: 0.74rem;">
+      <router-link class="col-xs-3 " to="/a1">
+        <img src="../../static/image/p1.png" class="body-p1"/>
+        <br>
+        <p class="body-rowText">赴加生子福利</p>
+      </router-link>
+      <router-link class="col-xs-3 " to="/a2">
+        <img src="../../static/image/p2.png" class="body-p1"/>
+        <br>
+        <p class="body-rowText">成功案例</p>
+      </router-link>
+      <router-link class="col-xs-3 " to="/a3">
+        <img src="../../static/image/p3.png" class="body-p1"/>
+        <br>
+        <p class="body-rowText">月子中心</p>
+      </router-link>
+      <router-link class="col-xs-3 " to="/a4">
+        <img src="../../static/image/p4.png" class="body-p1"/>
+        <br>
+        <p class="body-rowText">政策解读</p>
+      </router-link>
+    </div>
+    <div class="row" style="padding: 0 auto;text-align: center;margin-bottom: 0.74rem">
+
+      <div class="col-xs-3  " style="padding: 0 auto;text-align: center;">
+        <img src="../../static/image/p5.png" class="body-p1"/>
+        <br>
+        <p class="body-rowText">赴加生子费用</p>
+      </div>
+
+      <div class="col-xs-3 ">
+        <img src="../../static/image/p6.png" class="body-p1"/>
+        <br>
+        <p class="body-rowText">赴加攻略</p>
+      </div>
+
+      <div class="col-xs-3 ">
+        <img src="../../static/image/p7.png" class="body-p1"/>
+        <br>
+        <p class="body-rowText">赴加签证</p>
+      </div>
+
+      <div class="col-xs-3 ">
+        <img src="../../static/image/p8.png" class="body-p1"/>
+        <br>
+        <p class="body-rowText">大温介绍</p>
+      </div>
 
 
+    </div>
+
+  </div>
+
+  <!--循环列表-->
   <div>
     <div v-for="item  in  list" :key="item.id">
-      <div class="footer-w1" style=" border-bottom: 0.1px   solid  #EFEFEF;">
+      <router-link :to="'/a1/newsinfo/'+item.id" class="footer-w1" style=" border-bottom: 0.1px   solid  #EFEFEF;">
 
 
         <img :src="'http://canada-api.umsoft.cn'+item.cover" class="footer-p1"
-             style=" width: 3.38rem ;height: 3.38rem;  float: left; "/>
+             style=" width: 3.38rem ;height: 3.38rem;  "/>
 
         <div class="footer-w2  clearfix">
 
@@ -37,7 +91,7 @@
           <p class="footer-text3">{{item.type}}</p>
 
         </div>
-      </div>
+      </router-link>
     </div>
   </div>
   </body>
