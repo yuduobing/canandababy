@@ -3,14 +3,15 @@
   <div v-for="item  in  list"    :key="item.id">
   <div class="footer-w1" style=" border-bottom: 0.1px   solid  #EFEFEF;"   >
 
-      <image src="./image/item-pic.png" class="footer-p1"
-             style=" width: 3.38rem ;height: 3.38rem;"/>
 
-      <div class="footer-w2  clearfix">
+    <img :src="'http://canada-api.umsoft.cn'+item.cover" class="footer-p1"
+         style=" width: 3.38rem ;height: 3.38rem;  float: left; "/>
+
+    <div class="footer-w2  clearfix">
 
         <p class="footer-text1">{{item.title}}</p>
         <p class="footer-text2">{{item.description}}</p>
-        <p class="footer-text3">{{iteam.type}}</p>
+      <p class="footer-text3">{{item.type}}</p>
 
       </div>
      </div>
