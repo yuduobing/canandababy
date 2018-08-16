@@ -1,0 +1,130 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+color: black;
+
+}
+img{
+
+    border:none;
+    vertical-align: top;
+
+}
+.head-title{
+    width: 100%;
+    height: 1.85rem;
+    text-align: center;
+    font-size: 0.74rem;
+}
+.head1{
+  width:100%;
+
+min-width:100px;
+  margin: 0 auto;
+
+max-width:15rem;
+
+}
+
+  .swiper-container {
+    width:15rem;
+    height: 6.76rem;
+}
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+.body-rowText{
+	text-align: center;
+    font-size:0.44rem;
+    white-space:nowrap;
+}
+.body-p1{
+	margin: 0 auto;
+    width: 1.8rem;
+    height: 1.8rem;
+}
+
+
+.swiper-slide {background-position: center;background-size: cover;}
+
+
+
+.footer-w1{
+   width: 100%;
+   height: 4.4rem;
+
+  padding:0.46rem;
+
+}
+.footer-p1{
+
+     border-radius: 0.1rem;
+
+
+
+}
+  .footer-text1 {
+    text-overflow:ellipsis;
+
+   white-space:nowrap;
+
+    overflow:hidden;
+      font-weight:bold;
+      font-size:0.65rem;
+
+  }
+  .footer-text2{
+
+      font-size:0.46rem;
+      margin-top: 0.4rem;
+  margin-right: 0px;
+      margin-bottom: 0.2rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+      line-height:0.6rem ;
+      color: #A1A1A1;
+  }
+.footer-text3{
+text-align: center;
+  height: 0.72rem;
+    width: 1.94rem;padding: 0.15rem;
+    background: #EEEEEE;font-size: 0.34rem;
+    white-space:nowrap
+}
+.clearfix:after{
+    display: block;
+    content:'';
+    clear: both;
+    height:0;
+}
+
+.footer-w2{
+    margin-top: 0.14rem;
+
+
+    width: 10.2rem;
+    float: right;
+    height: 3.2rem;
+}
