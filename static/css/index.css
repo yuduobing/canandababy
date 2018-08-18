@@ -13,10 +13,17 @@ img{
 
 }
 .head-title{
-    width: 100%;
-    height: 1.85rem;
+  text-decoration: none !important;
+  height: 1.5rem;
     text-align: center;
-    font-size: 0.74rem;
+  font-size: 0.74rem !important;
+  font-weight: 400 !important;
+  background: white;
+}
+
+.backTo span {
+  text-decoration: none !important;
+
 }
 .head1{
   width:100%;
@@ -28,30 +35,7 @@ max-width:15rem;
 
 }
 
-  .swiper-container {
-    width:15rem;
-    height: 6.76rem;
-}
 
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #fff;
-
-      /* Center slide text vertically */
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      -webkit-justify-content: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -webkit-align-items: center;
-      align-items: center;
-    }
 .body-rowText{
 	text-align: center;
     font-size:0.44rem;

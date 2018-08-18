@@ -1,5 +1,17 @@
 <template>
   <div>
+    <div style="padding-top: 1.85rem"></div>
+    <mt-header class="head-title" fixed title="赴加生子福利">
+      <router-link to="this.$router.go(-1)" slot="left">
+        <div class="backTo">
+          <span v-on:click="back">返回</span>
+        </div>
+
+      </router-link>
+
+    </mt-header>
+    <img :src="'http://canada-api.umsoft.cn'+newsinfo.cover" class="footer-p1"
+         style=" width:100%;  height: 10rem;  "/>
     <div class="newsinfo-container">
       <h3 class="title"> {{newsinfo.title}}</h3>
       <span class="subtitle">{{newsinfo.create_time|dateFormat}}</span>
@@ -27,6 +39,9 @@
     }
     ,
     methods: {
+      back() {
+        this.$router.go(-1);//返回上一层
+      },
       getList() {
         console.log("获取中");
 

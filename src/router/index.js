@@ -1,12 +1,19 @@
 import Router from 'vue-router'
 import a1 from '@/components/a1'
-import a2 from '@/components/2'
-import a3 from '@/components/3'
-import a4 from '@/components/4'
+import a2 from '@/components/a2'
+import a3 from '@/components/a3'
+import a4 from '@/components/a4'
 import newsinfo from '@/components/newsinfo'
+import index from '@/components/index'
+
 var router = new Router({
   routes: [
-    {path: '/', redirect: '/a1'},
+    {path: '/', redirect: '/index'},
+    {
+      path: '/index',
+
+      component: index
+    },
     {
       path: '/a1',
 
